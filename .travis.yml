@@ -13,7 +13,7 @@ before_script:
 script:
   # - gradle -p FHIR-MAPPING build
   # - gradle -p FHIR-MAPPING check -i
-  - gradle compileJava
+  - gradle clean build check
 
 #jobs:
 #  include:
