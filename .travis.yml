@@ -9,24 +9,22 @@ jdk:
 before_script:
   - cp FHIR-MAPPING/config.properties.example FHIR-MAPPING/config.properties
 
-script: 
-  # - gradle -p FHIR-MAPPING build 
-  - gradle -p FHIR-MAPPING check -i
+script:
+  # - gradle -p FHIR-MAPPING build
+  # - gradle -p FHIR-MAPPING check -i
+  - cd FHIR-MAPPING
+  - gradle javaCompile
 
-jobs:
-  include:      
-    - stage: integration
-      rvm: 2.4
-      before_script:
-        - cp FHIR-MAPPING/config.properties.example FHIR-MAPPING/config.properties
-        - cd fhir_testing
-        - bundle install
-      script:
-        - cucumber
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
-      
-
-      
+#jobs:
+#  include:
+#    - stage: integration
+#      rvm: 2.4
+#      before_script:
+#        - cp FHIR-MAPPING/config.properties.example FHIR-MAPPING/config.properties
+#        - cd fhir_testing
+#        - bundle install
+#      script:
+#        - cucumber
+#
+#after_success:
+#  - bash <(curl -s https://codecov.io/bash)
