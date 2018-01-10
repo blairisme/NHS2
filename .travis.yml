@@ -7,13 +7,13 @@ jdk:
   - openjdk8
 
 before_script:
-  - cp FHIR-MAPPING/config.properties.example FHIR-MAPPING/config.properties
+  - cd FHIR-MAPPING
+  - cp config.properties.example config.properties
 
 script:
   # - gradle -p FHIR-MAPPING build
   # - gradle -p FHIR-MAPPING check -i
-  - cd FHIR-MAPPING
-  - gradle javaCompile
+  - gradle compileJava
 
 #jobs:
 #  include:
