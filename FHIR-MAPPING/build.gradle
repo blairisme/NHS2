@@ -76,3 +76,5 @@ checkstyle {
 }
 
 project.tasks.remove(project.tasks['checkstyleTest']);
+
+defaultTasks 'clean', 'build', 'check'
