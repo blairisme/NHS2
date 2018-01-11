@@ -1,9 +1,25 @@
 .DS_Store
-.vagrant/
 *.retry
 *~
-.gradle
-/build/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+.gradle/
+.metadata/
+.vagrant/
+.settings/
+.loadpath
+.recommenders
+
+build/
+bin/
+tmp/
+out/
+
+local.properties
+config.properties
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -13,27 +29,6 @@ gradle-app.setting
 
 # Cache of project
 .gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
-
-build/
-out/
-
-/.metadata/
-
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-config.properties
-.settings/
-.loadpath
-.recommenders
 
 # External tool builders
 .externalToolBuilders/
