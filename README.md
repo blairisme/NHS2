@@ -1,9 +1,7 @@
 # NHS2 - SMART-on-FHIR-on-openEHR
 
-[![Build Status](https://travis-ci.org/koonwei/NHS2.svg?branch=master)](https://travis-ci.org/koonwei/NHS2)
-[![codecov](https://codecov.io/gh/koonwei/NHS2/branch/master/graph/badge.svg)](https://codecov.io/gh/koonwei/NHS2)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8262f447922a4384b8f858c1b978fac2)](https://www.codacy.com/app/Yuan-W/NHS2?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=koonwei/NHS2&amp;utm_campaign=Badge_Grade)
-
+[![Build Status](https://travis-ci.org/blairisme/NHS2.svg?branch=develop)](https://travis-ci.org/blairisme/NHS2)
+[![codecov](https://codecov.io/gh/blairisme/NHS2/branch/develop/graph/badge.svg)](https://codecov.io/gh/blairisme/NHS2) 
 
 An implementation of SMART-on-FHIR for openEHR. This project aims to provide a FHIR facade for openEHR.
 
@@ -25,6 +23,3 @@ Node.js application to view all patients and show growth chart apps. To establis
 
 ### pathgenerater
 XQuery scripts to parse openEHR archetype paths from XSD template files.
-
-
-
