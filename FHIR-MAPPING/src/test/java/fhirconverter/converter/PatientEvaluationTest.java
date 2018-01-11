@@ -13,12 +13,11 @@ import org.apache.logging.log4j.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.XML;
+import org.junit.Assert;
 import org.junit.Test;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
-
-import junit.framework.Assert;
 
 /**
  * @author Shruti Sinha
